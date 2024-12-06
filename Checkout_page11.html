@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="Checkout_page.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="header">
+            <span class="logo">RESTAURANT</span>
+        </div>
+        <div class="checkout-form">
+            <h1>CHECKOUT</h1>
+            <p>Your order is almost ready. Please confirm your details.</p>
+            <form>
+                <div class="form-section">
+                    <label for="payment-option">Payment Option</label>
+                    <select id="payment-option">
+                        <option>Credit/Debit Card</option>
+                        <option>UPI(GPay/PhonePe)</option>
+                        <option>Cash</option>
+                    </select>
+                </div>
+
+                <div class="form-section">
+                    <label for="details">Order Details</label>
+                    <select id="details">
+                        <option>Dine-In</option>
+                        <option>Takeaway</option>
+                    </select>
+                </div>
+
+                <div class="form-section">
+                    <label for="banner">Coupon Code</label>
+                    <input type="text" id="banner" placeholder="Enter Coupon Code">
+                </div>
+
+                <div class="price-summary">
+                    <div class="item">
+                        <span>Items</span>
+                        <span class="price">4 items</span>
+                    </div>
+                    <div class="item">
+                        <span>Subtotal</span>
+                        <span class="price">₹7,000</span>
+                    </div>
+                    <div class="item">
+                        <span>Tax</span>
+                        <span class="price">₹500</span>
+                    </div>
+                </div>
+
+                <div class="total-summary">
+                    <span>Total:</span>
+                    <span>₹7,500</span>
+                </div>
+
+                <div class="buttons">
+                    <button type="button" class="btn edit">Edit Order</button>
+                    <button type="submit" class="btn proceed">Proceed</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="Checkout_page.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>F&B Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+    <!-- Header Section -->
+
+
+    <header class="hero-section">
+
+        <div class="navbar">
+
+            <h1 class="logo">F&B</h1>
+
+            <nav class="nav-links">
+
+                <a href="#menu" class="rounded-link">View Menu</a>
+                <a href="#" class="rounded-link">About Us</a>
+
+            </nav>
+
+        </div>
+
+        <div class="hero-content">
+
+            <h2>Intimate Dining Restaurant</h2>
+            <h1 class="shiny-gold-text">F&B Restaurant</h1>
+            <p class="experience">Experience dining like never before with our thoughtfully curated menu and elegant ambiance.</p>
+            <h30 id="welcome-message">
+
+                <!-- The personalized greeting message will be displayed here -->
+
+            </h30>
+
+        </div>
+
+        <div class="hours">
+
+            <p><strong>Working Hours:</strong></p>
+
+            <ul>
+
+                <li><strong>Sunday:</strong> 5:00 PM – 9:00 PM</li>
+                <li><strong>Monday - Thursday:</strong> 5:00 PM – 10:00 PM</li>
+                <li><strong>Friday & Saturday:</strong> 5:00 PM – 11:00 PM</li>
+
+            </ul>
+
+        </div>
+
+    </header>
+
+
+    <!-- Menu Section -->
+
+
+    <section class="menu-section" id="menu">
+
+        <div class="menu-content">
+
+            <div class="menu-left">
+
+                <h2>Taste the Mood</h2>
+                <h3>Our Menu</h3>
+                <p>Book now at F&B Restaurant, known for sharing plates, craft cocktails, and a thoughtfully curated wine list.</p>
+                <a href="menu.html" class="btn rounded-link">View Menu</a>
+
+            </div>
+
+            <div class="menu-right">
+
+                <img src="menu2.jpg" alt="Signature Dish">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer Section -->
+
+    <footer id="contact">
+
+        <h2>We look forward to have you dine with us</h2>
+
+        <div class="contact-info">
+
+            <p><strong>Address:</strong> Unit No. FC-03A and FC-04, 1st Floor, Located in- Phoenix Citadel, MR 10 Rd, Indore, Madhya Pradesh 452016</p>
+            <p><strong>Phone:</strong> +91 87188 10071</p>
+            <a href="#" class="btn">Book your table</a>
+
+        </div>
+
+        <p>&copy; 2024 F&B Hospitality Group | All Rights Reserved</p>
+
+    </footer>
+
+    <script>
+
+        // Retrieve the customer name from localStorage
+        const customerName = localStorage.getItem('customerName');
+
+        // Display the greeting message if customerName exists
+        if (customerName) {
+
+            const welcomeMessageDiv = document.getElementById('welcome-message');
+            welcomeMessageDiv.innerHTML = `<h1>Hi, ${customerName}!!</h1>`;
+
+        } else {
+
+            const welcomeMessageDiv = document.getElementById('welcome-message');
+            welcomeMessageDiv.innerHTML = `<h1>Hi, Guest!!</h1>`;
+
+        }
+
+    </script>
+    
+</body>
+
+</html>

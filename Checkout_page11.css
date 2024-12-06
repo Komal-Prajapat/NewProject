@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #d4af37;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/luxury-restaurant.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1; 
+    }
+   
+
+.container {
+    background-color: #000; 
+    opacity: 0.7;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.9);
+    padding: 40px;
+    width: 500px;
+    text-align: center;
+    z-index: 2; 
+    position: relative; 
+}
+
+
+.header .logo {
+    font-size: 18px;
+    font-weight: bold;
+    /* color: #4A4A4A; */
+    text-align: left;
+}
+
+.checkout-form h1 {
+    font-size: 28px;
+    /* color: #4A4A4A; */
+    margin-bottom: 10px;
+}
+
+.checkout-form p {
+    color: black;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.form-section {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    /* color: #4A4A4A; */
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+select, input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+    font-size: 14px;
+    color: #4A4A4A;
+}
+
+.price-summary {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.price {
+    color: #fff;
+}
+
+.total-summary {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.proceed {
+    background-color: #2d2d2d;
+    color: #d4af37;
+}
+
+.edit {
+    background-color: #d4af37;
+    color: black;
+}
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}

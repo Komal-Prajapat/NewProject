@@ -1,0 +1,285 @@
+/* General Page Styling */
+*{
+    font-family: valery;
+}
+body {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'EB Garamond', serif; */
+    background-color: #111;
+    color: #d4af37;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* Header Section */
+
+header {
+    padding: 20px;
+    background-color: #111;
+    color: #d4af37;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d4af37;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.back-to-menu a {
+    color: #d4af37;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+/* Cart Container */
+
+.cart-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+/* Cart Items Section */
+
+.cart-items {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #d4af37;
+    border-radius: 5px;
+}
+
+.cart-item img {
+    width: 100px;
+    height: auto;
+}
+
+.item-details {
+    flex: 2;
+    margin-left: 20px;
+}
+
+.item-name {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.item-price {
+    font-size: 18px;
+}
+
+
+/* Quantity and Remove Section */
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-controls button {
+    background-color: #d4af37;
+    border: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #111;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.remove-btn {
+    color: #111;
+    cursor: pointer;
+    border: 2px solid #d4af37;
+    border-radius: 5px;
+    background-color: #d4af37;
+    width: 55px;
+    padding: 5px 10px;
+}
+
+.remove-btn:hover {
+    background-color: #000;
+    color: #d4af37;
+}
+
+
+/* Cart Summary Section */
+
+.cart-summary {
+    flex: 1;
+    padding: 20px;
+    background-color: #222;
+    border: 1px solid #d4af37;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.cart-summary h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+
+/* Total price section */
+
+.total-price {
+    display: flex;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#checkout-btn {
+    padding: 10px;
+    font-size: 18px;
+    background-color: #d4af37;
+    border: 2px solid #d4af37;
+    color: #111;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#checkout-btn:hover {
+    background-color: #000;
+    color: #d4af37;
+}
+
+
+
+
+
+
+@media screen and (max-width: 426px) and (min-width: 374px){
+
+    h1 {
+        font-size: 25px;
+    }
+    header {
+        width:100%;
+    }
+
+    .cart-item img{
+        width : 35px;
+    }
+
+    .item-name {
+        font-size: 18px;
+    }
+
+    .cart-container {
+
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+    .cart-item {
+        width: 347px;
+    }
+
+    .quantity-controls button {
+      
+        padding: 0px 7px;
+    }
+
+    .remove-btn{
+        padding: 2px 10px;
+        font-size: 14px;
+    }
+    .cart-summary {
+       
+        padding: 0 20px;
+        height : 174px;
+    }
+    .cart-summary h2 {
+        font-size: 22px;
+        margin-bottom: 11px;
+    }
+    .total-price {
+        
+        font-size: 19px;
+    }
+    #checkout-btn {
+        padding: 8px 10px;
+        font-size: 17px;
+    }
+    
+
+}
+
+@media screen and (max-width: 374px) and (min-width: 319px){
+
+    h1 {
+        font-size: 22px;
+    }
+    header {
+        width:100%;
+    }
+
+    .cart-item img{
+        width : 30px;
+    }
+
+    .item-name {
+        font-size: 16px;
+    }
+
+    .cart-container {
+
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+    .cart-item {
+        width: 304px;
+    }
+
+    .quantity-controls button {
+      
+        padding: 0px 5px;
+    }
+
+    .remove-btn{
+        padding: 2px 8px;
+        font-size: 12px;
+    }
+    .cart-summary {
+       
+        padding: 0 20px;
+        height : 174px;
+    }
+    .cart-summary h2 {
+        font-size: 20px;
+        margin-bottom: 11px;
+    }
+    .total-price {
+        
+        font-size: 18px;
+    }
+    #checkout-btn {
+        padding: 8px 10px;
+        font-size: 17px;
+    }
+    
+
+}

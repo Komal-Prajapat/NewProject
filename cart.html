@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Summary</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="cart.css">
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+
+    <header>
+
+        <h1>Your Cart</h1>
+        <div class="back-to-menu">
+
+            <a href="menu.html">← Back to Menu</a>
+
+        </div>
+
+    </header>
+
+    <!-- Cart Section -->
+
+    <section class="cart-container">
+
+        <div class="cart-items" id="cart-items">
+
+            <!-- Cart items will be dynamically inserted here -->
+
+        </div>
+
+        <!-- Cart Summary -->
+
+        <div class="cart-summary">
+
+            <h2>Order Summary</h2>
+            <div class="total-price">
+
+                <span>Total: ₹</span><span id="total-amount">0</span>
+
+            </div>
+
+            <button id="checkout-btn">Checkout</button>
+
+        </div>
+
+    </section>
+
+    <script src="cart1.js" defer></script>
+
+</body>
+
+</html>

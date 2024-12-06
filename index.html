@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="01.login.css">
+
+</head>
+
+<body>
+    <section class="section1">
+
+      
+
+            <nav>
+
+                <div class="restro-name">F&B</div>
+
+                
+
+            </nav>
+
+            <div class="headings">
+
+                <h1 class="top-head-1"> Welcome To Our Restaurant</h1>
+                <h1 class="top-head-2"> <p id ="p1">Start your culinary journey !</p>  <p id ="p2"> Enter your details to start your order.</p>
+                </h1>
+
+            </div>
+
+
+            <div class="line-with-circle">
+
+                <div class="line"></div>
+                <div class="circle"></div>
+                <div class="line"></div>
+
+            </div>
+
+            <div class="inputs-data ">
+
+                <form method="POST" name="google-sheet">
+
+                    <div class="table AA">
+
+                        <span class="logo-table" style="margin-top:10px;    margin-right: 7px;"><img src="Asset 11.png" height="20px"></span>
+                        <input type="number" name="Table No." placeholder="Table No." class="table-no" required>
+
+                    </div>
+
+                    <div class="name AA">
+
+                        <span class="user-icon" style="margin:0px 0 0 0px"><img src="Asset 2.png" height="25px"></span>
+                        <input type="text" name="Username" placeholder="Name" class="user-name" required>
+
+                    </div>
+
+                    <div class="table AA">
+
+                        <span class="logo-table" style="margin-top:10px;    margin-right: 7px;"><img src="Asset 2.png" height="25px"></span>
+                        <input type="number" name ="Mobile No."placeholder="Mobile No." class="table-no" required>
+
+                    </div>
+                
+            </div>
+        
+    </section>
+
+
+    <div class="btn-div">
+
+        <button class="submit">START<button>
+                <!-- <p>Let's start your order</p> -->
+
+    </div>
+</form>
+
+
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxtsfYxig9dU1JwHgfGWSDLSdsAH4jR75vgXmqf9CPCsdn7M7lyjVtedK8ePOFIiYayYw/exec'; // Replace with your Google Sheets script URL
+    const form = document.forms['google-sheet'];
+
+    // Add event listener on form submission
+    form.addEventListener('submit', e => {
+        e.preventDefault(); // Prevent form refresh
+
+        // Fetch the customer name
+        const customerName = document.querySelector('input[name="Username"]').value;
+
+        // Store the customer name in localStorage
+        localStorage.setItem('customerName', customerName);
+
+        // Submit data to Google Sheets
+        fetch(scriptURL, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+            .then(response => {
+                alert("Thanks for submitting your details! Redirecting to the homepage..."); // Popup message
+                window.location.href = 'homepage.html'; // Redirect to homepage
+            })
+            .catch(error => console.error('Error!', error.message)); // Error handling
+    });
+
+
+
+
+
+
+</script>
+
+</body>
+</body>
+
+</html>

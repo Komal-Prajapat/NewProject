@@ -1,0 +1,273 @@
+/* General Styling */
+* {
+
+    font-family: valery;
+
+}
+
+body {
+
+    background-color: #000;
+    color: #d4af37;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/* Header Styles */
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #111;
+    color: #d4af37;
+    align-items: center;
+
+}
+
+h1 {
+
+    margin: 0;
+    
+}
+
+
+/* Cart Icon */
+
+.cart-icon {
+
+    position: relative;
+
+}
+
+.cart-icon a {
+
+    color: #d4af37;
+    text-decoration: none;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    font-size: 30px;
+
+}
+
+#cart-icon {
+
+    font-size: 36px;
+    vertical-align: middle;
+
+}
+
+#cart-count {
+
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 14px;
+
+}
+
+
+/* Menu Section */
+.menu-tag {
+
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+.menu-section {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+
+}
+
+.menu-item {
+
+    width: 250px;
+    background-color: #222;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+}
+
+.dish-image img {
+
+    width: 100%;
+    height: 250px;
+    border-radius: 8px;
+
+}
+
+.dish-details h3 {
+
+    font-size: 20px;
+    margin: 15px 0 5px;
+
+}
+
+.dish-details p {
+
+    font-size: 18px;
+    margin-bottom: 10px;
+
+}
+
+.add-to-cart-btn {
+
+    background-color: #d4af37;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+
+}
+
+.add-to-cart-btn:hover {
+
+    background-color: #ffcc00;
+
+}
+
+@media screen and (max-width: 427px) and (min-width: 375px) {
+
+    header h1 {
+
+        font-size: 22px;
+
+    }
+
+    #cart-icon {
+
+        font-size: 25px;
+
+    }
+
+    #cart-count {
+
+        font-size: 11px;
+
+    }
+
+    .menu-tag {
+
+        font-size: 21px;
+
+    }
+
+    .dish-image img {
+
+        width: 50%;
+        height: 98px;
+
+    }
+
+    .dish-details h3 {
+
+        font-size: 12px;
+        margin: 6px 0 5px;
+
+    }
+
+    .dish-details p {
+
+        font-size: 14px;
+        margin: 4px;
+
+    }
+
+    .add-to-cart-btn {
+
+        font-size: 7px;
+        padding: 7px 17px;
+
+    }
+
+    .menu-item {
+
+        width: 159px;
+        margin: 4px 4px;
+        padding: 24px 0;
+
+    }
+}
+
+@media screen and (max-width: 374px) and (min-width: 320px) {
+
+    header h1 {
+
+        font-size: 17px;
+
+    }
+
+    #cart-icon {
+
+        font-size: 25px;
+
+    }
+
+    #cart-count {
+
+        font-size: 8px;
+
+    }
+
+    .menu-tag {
+
+        font-size: 18px;
+
+    }
+
+    .dish-image img {
+
+        width: 50%;
+        height: 78px;
+
+    }
+
+    .dish-details h3 {
+
+        font-size: 10px;
+        margin: 6px 0 5px;
+
+    }
+
+    .dish-details p {
+
+        font-size: 12px;
+        margin: 4px;
+
+    }
+
+    .add-to-cart-btn {
+
+        font-size: 6px;
+        padding: 6px 14px;
+
+    }
+
+    .menu-item {
+
+        width: 132px;
+        margin: 4px 4px;
+        padding: 24px 0;
+
+    }
+    
+}
